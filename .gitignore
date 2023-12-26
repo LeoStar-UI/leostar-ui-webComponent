@@ -18,5 +18,6 @@ server/dist
 public/dist
 storybook-static/
 .vitepress/
+.vitepress
 docs/.vitepress/cache/
 docs/public/play
