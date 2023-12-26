@@ -17,5 +17,6 @@ node_modules
 server/dist
 public/dist
 storybook-static/
+.vitepress/
 docs/.vitepress/cache/
 docs/public/play
