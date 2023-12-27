@@ -17,6 +17,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
     "test": "turbo run test",
+    "typecheck": "tsc --noEmit",
     "commit": "git add . && git-cz",
     "changeset": "changeset",
     "version-packages": "changeset version",

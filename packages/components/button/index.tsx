@@ -1,6 +1,6 @@
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export function Button({ children, ...other }: ButtonProps): JSX.Element {
@@ -8,7 +8,7 @@ export function Button({ children, ...other }: ButtonProps): JSX.Element {
     <button type="button" {...other}>
       {children}
     </button>
-  );
+  )
 }
 
-Button.displayName = "Button";
+Button.displayName = 'Button'
