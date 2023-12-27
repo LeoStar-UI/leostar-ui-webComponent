@@ -1,4 +1,5 @@
 {
+  "extends": "@leostar-ui/typescript-config/base.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",

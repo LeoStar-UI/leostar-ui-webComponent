@@ -1,0 +1,14 @@
+{
+  "extends": "@leostar-ui/typescript-config/react-library.json",
+  "exclude": [
+    "build",
+    "**/dist/**",
+    "./unocss.config.ts"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.d.ts",
+    "**/*.vue",
+    "**/*.tsx"
+  ],
+}

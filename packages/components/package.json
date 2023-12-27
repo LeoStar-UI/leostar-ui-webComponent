@@ -1,0 +1,32 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "基于unocss的组件库",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "keywords": [
+    "leostar",
+    "ui",
+    "components"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "unocss": "^0.58.0",
+    "unplugin-auto-import": "^0.16.7",
+    "unplugin-vue-macros": "^2.6.1",
+    "vite": "^4.5.0",
+    "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.17",
+    "react": "^18.2.0",
+    "tsup": "^8.0.1"
+  }
+}
