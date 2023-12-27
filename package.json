@@ -54,7 +54,7 @@
     "lint-staged": "^14.0.1",
     "simple-git": "^3.21.0",
     "turbo": "latest",
-    "vitepress": "1.0.0-rc.20",
+    "vitepress": "1.0.0-rc.33",
     "vitest": "^1.1.0"
   }
 }
