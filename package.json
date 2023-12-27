@@ -40,7 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@changesets/cli": "^2.25.2",
+    "@changesets/cli": "^2.27.1",
     "@ileostar/eslint-config": "^0.3.0",
     "@leostar-ui/typescript-config": "workspace:^",
     "commitizen": "^4.3.0",
