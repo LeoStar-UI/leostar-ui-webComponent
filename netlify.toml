@@ -3,13 +3,8 @@
   NODE_VERSION = "16"
 
 [build]
-  publish = "docs/.vitepress/dist"
+  publish = "docs-dist"
   command = "pnpm install && pnpm -w run deploy"
-
-[[redirects]]
-  from = "/play/*"
-  to = "/play/index.html"
-  status = 200
 
 [functions]
   node_bundler = "esbuild"

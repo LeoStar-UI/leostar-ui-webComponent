@@ -15,7 +15,7 @@ export default defineConfig({
         base,
         publicPath,
         title: 'leostar-ui组件库', // 站点名称
-        outputPath: 'docs-dist', // 输出文件夹
+        outputPath: 'docs/dist', // 输出文件夹
         resolve: {
                 docDirs: ['docs'],
                 atomDirs: [
