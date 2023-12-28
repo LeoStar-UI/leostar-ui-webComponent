@@ -6,14 +6,7 @@ import path from 'path'
 let base: string | undefined
 let publicPath: string | undefined
 
-if (process.env.PREVIEW !== '1') {
-        base = '/docs/' // 后续部署到gh-pages如果不配置路径会找不到资源
-        publicPath = '/docs/'
-}
-
 export default defineConfig({
-        base,
-        publicPath,
         title: 'leostar-ui组件库', // 站点名称
         outputPath: 'docs/dist', // 输出文件夹
         resolve: {
