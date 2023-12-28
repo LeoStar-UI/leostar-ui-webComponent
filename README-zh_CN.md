@@ -2,7 +2,7 @@
 
 <p align=center><img algn=center width="300px" src="./docs/public/logo.svg"></p>
 <p align="center">
-  <a href="https://leostar-ui.netlify.app/" target="_blank">
+  <a href="https://ui.leostar.top/" target="_blank">
   👀 在线预览
   </a>|
   <a href="./README.md">

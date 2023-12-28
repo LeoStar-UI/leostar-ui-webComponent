@@ -1,7 +1,7 @@
 # LEOSTAR-UI Component library
 <p align=center><img algn=center width="300px" src="./docs/public/logo.svg"></p>
 <p align="center">
-  <a href="https://leostar-ui.netlify.app/" target="_blank">
+  <a href="https://ui.leostar.top/" target="_blank">
   👀 Online preview
   </a>|
   <a href="./README-zh_CN.md">
