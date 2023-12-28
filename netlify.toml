@@ -1,9 +1,9 @@
 [build.environment]
   NETLIFY_USE_PNPM = "true"
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
 
 [build]
-  publish = "docs-dist"
+  publish = "docs/dist"
   command = "pnpm install && pnpm -w run deploy"
 
 [functions]
