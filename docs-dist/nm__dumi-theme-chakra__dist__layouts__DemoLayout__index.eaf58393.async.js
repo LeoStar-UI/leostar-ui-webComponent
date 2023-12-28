@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkleostar_ui=self.webpackChunkleostar_ui||[]).push([[242],{70470:function(o,t,u){u.r(t);var e=u(62435),a=u(22943),n=function(){var l=(0,a.pC)();return e.createElement(e.Fragment,null,l)};t.default=n}}]);
