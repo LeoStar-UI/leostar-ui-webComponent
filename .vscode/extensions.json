@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dracula-theme.theme-dracula",
+    "editorconfig.editorconfig",
+    "antfu.file-nesting",
+    "fabiospampinato.vscode-open-in-github",
+    "svipas.prettier-plus",
+    "esbenp.prettier-vscode",
+    "antfu.unocss",
+    "antfu.vite",
+    "zixuanchen.vitest-explorer",
+    "emmanuelbeziat.vscode-great-icons",
+    "davidbwaters.macos-modern-theme"
+  ]
+}
