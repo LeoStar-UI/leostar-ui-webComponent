@@ -1,15 +1,9 @@
-import { expect, afterEach } from "vitest";
-import { cleanup } from "@testing-library/react";
-import matchers, { TestingLibraryMatchers } from "@testing-library/jest-dom/matchers";
+import { afterEach, expect } from 'vitest'
+import { cleanup } from '@testing-library/react'
+import matchers from '@testing-library/jest-dom/matchers'
 
-declare global {
-  namespace jest {
-    interface Matchers<R, T> extends TestingLibraryMatchers<T, R> {}
-  }
-}
-
-expect.extend(matchers);
+expect.extend(matchers)
 
 afterEach(() => {
-  cleanup();
-});
+  cleanup()
+})
