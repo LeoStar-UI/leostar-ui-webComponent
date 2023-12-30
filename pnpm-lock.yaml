@@ -28,7 +28,7 @@ importers:
         version: 1.3.2-canary.2
       dumi:
         specifier: ^2.2.16
-        version: 2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@2.8.0)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
+        version: 2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
       dumi-theme-chakra:
         specifier: ^0.0.22
         version: 0.0.22(@algolia/client-search@4.22.0)(@chakra-ui/styled-system@2.9.2)(@chakra-ui/system@2.6.2)(dumi@2.2.16)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.13.0)
@@ -44,6 +44,9 @@ importers:
       lint-staged:
         specifier: ^14.0.1
         version: 14.0.1
+      prettier:
+        specifier: ^3.1.1
+        version: 3.1.1
       server:
         specifier: ^1.0.38
         version: 1.0.38
@@ -61,7 +64,7 @@ importers:
     devDependencies:
       '@vercel/style-guide':
         specifier: ^5.0.0
-        version: 5.1.0(eslint@8.56.0)(prettier@2.8.0)(typescript@5.2.2)
+        version: 5.1.0(eslint@8.56.0)(prettier@3.1.1)(typescript@5.2.2)
       eslint-config-turbo:
         specifier: ^1.10.12
         version: 1.11.2(eslint@8.56.0)
@@ -5601,7 +5604,7 @@ packages:
       - rollup
     dev: true
 
-  /@vercel/style-guide@5.1.0(eslint@8.56.0)(prettier@2.8.0)(typescript@5.2.2):
+  /@vercel/style-guide@5.1.0(eslint@8.56.0)(prettier@3.1.1)(typescript@5.2.2):
     resolution: {integrity: sha512-L9lWYePIycm7vIOjDLj+mmMdmmPkW3/brHjgq+nJdvMOrL7Hdk/19w8X583HYSk0vWsq494o5Qkh6x5+uW7ljg==}
     engines: {node: '>=16'}
     peerDependencies:
@@ -5638,8 +5641,8 @@ packages:
       eslint-plugin-testing-library: 6.2.0(eslint@8.56.0)(typescript@5.2.2)
       eslint-plugin-tsdoc: 0.2.17
       eslint-plugin-unicorn: 48.0.1(eslint@8.56.0)
-      prettier: 2.8.0
-      prettier-plugin-packagejson: 2.4.7(prettier@2.8.0)
+      prettier: 3.1.1
+      prettier-plugin-packagejson: 2.4.7(prettier@3.1.1)
       typescript: 5.2.2
     transitivePeerDependencies:
       - eslint-import-resolver-node
@@ -8748,7 +8751,7 @@ packages:
       animated-scroll-to: 2.3.0
       clsx: 1.2.1
       cmdk: 0.1.22(react-dom@18.2.0)(react@18.2.0)
-      dumi: 2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@2.8.0)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
+      dumi: 2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
       framer-motion: 7.10.3(react-dom@18.2.0)(react@18.2.0)
       heti: 0.9.4
       prism-react-renderer: 1.3.5(react@18.2.0)
@@ -8764,7 +8767,7 @@ packages:
       - search-insights
     dev: true
 
-  /dumi@2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@2.8.0)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0):
+  /dumi@2.2.16(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0):
     resolution: {integrity: sha512-r2x/CY0fR8/YZOwEnG4JsLEpn8jOg94Qyd1u+7pRD9SCx7dF9It+GwkGbdNEsyenGsO/ZU9wD+Kz7KO+HU7/EA==}
     hasBin: true
     peerDependencies:
@@ -8828,7 +8831,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.69.5
       sitemap: 7.1.1
-      umi: 4.0.90(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@2.8.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
+      umi: 4.0.90(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
       unified: 10.1.2
       unist-util-visit: 4.1.2
       unist-util-visit-parents: 5.1.3
@@ -15392,7 +15395,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /prettier-plugin-organize-imports@3.2.4(prettier@2.8.0)(typescript@5.2.2):
+  /prettier-plugin-organize-imports@3.2.4(prettier@3.1.1)(typescript@5.2.2):
     resolution: {integrity: sha512-6m8WBhIp0dfwu0SkgfOxJqh+HpdyfqSSLfKKRZSFbDuEQXDDndb8fTpRWkUrX/uBenkex3MgnVk0J3b3Y5byog==}
     peerDependencies:
       '@volar/vue-language-plugin-pug': ^1.0.4
@@ -15405,11 +15408,11 @@ packages:
       '@volar/vue-typescript':
         optional: true
     dependencies:
-      prettier: 2.8.0
+      prettier: 3.1.1
       typescript: 5.2.2
     dev: true
 
-  /prettier-plugin-packagejson@2.4.3(prettier@2.8.0):
+  /prettier-plugin-packagejson@2.4.3(prettier@3.1.1):
     resolution: {integrity: sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -15417,12 +15420,12 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.0
+      prettier: 3.1.1
       sort-package-json: 2.4.1
       synckit: 0.8.5
     dev: true
 
-  /prettier-plugin-packagejson@2.4.7(prettier@2.8.0):
+  /prettier-plugin-packagejson@2.4.7(prettier@3.1.1):
     resolution: {integrity: sha512-/n1HGcBbuJyTlD3tb2/tW1mT5WIR6FCo+bAijHF6pNoSBf8YoxoskawjSY2ku9/8d6mdzci7oMchziI7CYEWYg==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -15430,7 +15433,7 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.0
+      prettier: 3.1.1
       sort-package-json: 2.6.0
       synckit: 0.8.6
     dev: true
@@ -15444,6 +15447,12 @@ packages:
   /prettier@2.8.0:
     resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
@@ -18493,7 +18502,7 @@ packages:
       random-bytes: 1.0.0
     dev: true
 
-  /umi@4.0.90(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@2.8.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0):
+  /umi@4.0.90(@babel/core@7.23.6)(@types/node@20.5.1)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0):
     resolution: {integrity: sha512-jgTiJv4fnHTC2a1hwM+dXmkyKoaZaDTqiJv2w4welDJUfpP+uyhR0zcDXwLuu9KTaUUlGxbIW0fGAeM//fxZ+Q==}
     engines: {node: '>=14'}
     hasBin: true
@@ -18508,8 +18517,8 @@ packages:
       '@umijs/server': 4.0.90
       '@umijs/test': 4.0.90(@babel/core@7.23.6)
       '@umijs/utils': 4.0.90
-      prettier-plugin-organize-imports: 3.2.4(prettier@2.8.0)(typescript@5.2.2)
-      prettier-plugin-packagejson: 2.4.3(prettier@2.8.0)
+      prettier-plugin-organize-imports: 3.2.4(prettier@3.1.1)(typescript@5.2.2)
+      prettier-plugin-packagejson: 2.4.3(prettier@3.1.1)
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
