@@ -54,7 +54,7 @@
     "isomorphic-fetch": "^3.0.0",
     "lint-staged": "^14.0.1",
     "server": "^1.0.38",
-    "simple-git": "^3.21.0",
+    "simple-git": "^3.22.0",
     "turbo": "latest",
     "vitest": "^1.1.0"
   }
