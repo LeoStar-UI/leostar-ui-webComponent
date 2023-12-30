@@ -12,11 +12,11 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --continue",
-    "lint": "turbo run lint",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
-    "test": "turbo run test",
+    "lint": "turbo lint --no-daemon",
+    "test": "turbo test --no-daemon",
+    "test:cov": "vitest run --coverage",
+    "clean": "turbo run clean && rm -rf node_modules",
     "typecheck": "tsc --noEmit",
     "commit": "git add . && git-cz",
     "changeset": "changeset",
@@ -35,10 +35,8 @@
     "commit-msg": "node ./scripts/verifyCommitMsg.js"
   },
   "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "eslint --fix",
-      "git add ."
-    ]
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix",
+    "*.json": "prettier --write"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -53,6 +51,7 @@
     "husky": "^8.0.3",
     "isomorphic-fetch": "^3.0.0",
     "lint-staged": "^14.0.1",
+    "prettier": "^3.1.1",
     "server": "^1.0.38",
     "simple-git": "^3.22.0",
     "turbo": "latest",
