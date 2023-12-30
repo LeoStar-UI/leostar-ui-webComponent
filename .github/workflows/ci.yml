@@ -32,8 +32,8 @@ jobs:
       - name: Lint
         run: pnpm -r lint
 
-      - name: Build & Preview
-        run: pnpm build && pnpm preview
+      - name: Build
+        run: pnpm build
 
       - name: Generate coverage reports
         run: pnpm test:cov
