@@ -45,6 +45,10 @@ export default defineConfig({
                     {
                             title: '团队',
                             link: '/about/team'
+                    },
+                    {
+                            title: '贡献',
+                            link: '/contribution/index'
                     }
             ],
             footer: "Copyright © 2023 | Powered by LeoStar-UI"

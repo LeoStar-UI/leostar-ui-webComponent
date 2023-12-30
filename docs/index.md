@@ -18,6 +18,5 @@ features:
   - emoji: 🎨
     title: 全新主题系统
     description: 不是吧不是吧
-footer: Open-source MIT Licensed | Copyright © 2023<br />Powered by [LeoStar-UI](https://github.com/LeoStar-UI)
 ---
 
