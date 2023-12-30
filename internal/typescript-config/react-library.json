@@ -5,6 +5,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "lib": ["dom", "ES2015"],
+    "types": ["@testing-library/jest-dom"],
     "module": "ESNext",
     "target": "es6"
   }
