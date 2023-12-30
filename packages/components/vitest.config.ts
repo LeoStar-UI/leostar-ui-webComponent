@@ -1,13 +1,12 @@
-import { resolve } from 'node:path'
-import { defineConfig } from 'vitest/config'
+import { defineConfig, mergeConfig } from 'vitest/config'
+import viteConfig from './vite.config'
 
-const r = (p: string) => resolve(__dirname, p)
-export default defineConfig({
-  optimizeDeps: {
-    disabled: true,
-  },
-  test: {
-    clearMocks: true,
-    environment: 'jsdom',
-  },
-})
+export default mergeConfig(
+    viteConfig,
+    defineConfig({
+        test: {
+            environment: "jsdom",
+            setupFiles: "./vitest.setup.ts",
+        },
+    })
+)
