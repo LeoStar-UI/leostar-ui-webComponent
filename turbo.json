@@ -6,10 +6,12 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": []
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx", "src/**/*.vue"],
+      "cache": true
     },
-    "lint": {},
+    "lint": {
+      "cache": true
+    },
     "dev": {
       "cache": false,
       "persistent": true

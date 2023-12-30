@@ -16,7 +16,4 @@ dist
 node_modules
 server/dist
 public/dist
-storybook-static/
-.vitepress/
-.vitepress
 docs/dist
