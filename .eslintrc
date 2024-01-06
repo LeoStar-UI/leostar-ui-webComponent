@@ -1,3 +1,7 @@
 {
-  "extends": "@ileostar"
+  "root": true,
+  "extends": [
+    "@ileostar/eslint-config/react",
+    "@leostar-ui/eslint-config/react-library"
+  ]
 }
