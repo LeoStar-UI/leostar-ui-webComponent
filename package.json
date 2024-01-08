@@ -6,7 +6,7 @@
   "workspaces": [
     "packages/*",
     "internal/*",
-    "playground",
+    "playground/*",
     "docs"
   ],
   "scripts": {
@@ -14,7 +14,9 @@
     "dev": "turbo run dev --no-cache --continue",
     "docs:dev": "dumi dev",
     "docs:build": "rimraf docs/dist && dumi build",
-    "play": "pnpm -C playground dev",
+    "play:vue": "pnpm --filter vue-starter dev",
+    "play:react": "pnpm --filter react-starter dev",
+    "play:svelte": "pnpm --filter svelte-starter dev",
     "prepare": "husky install",
     "lint": "turbo lint --no-daemon",
     "test": "turbo test --no-daemon",
@@ -36,7 +38,7 @@
     "commit-msg": "node ./scripts/verifyCommitMsg.js"
   },
   "lint-staged": {
-    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --cache --fix",
+    "*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts} --ignore playground/**": "eslint . --fix",
     "*.json": "prettier --write"
   },
   "engines": {

@@ -10,6 +10,7 @@
       "cache": true
     },
     "lint": {
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx", "src/**/*.vue"],
       "cache": true
     },
     "dev": {

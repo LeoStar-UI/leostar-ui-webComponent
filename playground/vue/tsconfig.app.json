@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "types": [
+      "vite/client",
+      "@alova/adapter-axios",
+      "vite-plugin-pages/client",
+      "unplugin-vue-macros/macros-global"
+    ],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "composite": true
+  },
+  "exclude": ["dist", "node_modules"],
+  "composite": true
+}
