@@ -1,6 +1,5 @@
 {
   "name": "LeoStar-UI",
   "description": "React component library based on UnoCSS.",
-  "template": "https://vercel.com/templates/react/turborepo-design-system",
   "featured": true
 }

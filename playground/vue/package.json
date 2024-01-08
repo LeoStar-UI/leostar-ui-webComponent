@@ -11,7 +11,6 @@
     "build:dev": "vue-tsc --noEmit && vite build --mode dev",
     "build:pro": "vue-tsc --noEmit && vite build --mode pro",
     "preview": "vite preview",
-    "test": "vitest --mode dev",
     "typecheck": "vue-tsc --noEmit",
     "push": "git push",
     "fix": "eslint src/**/*.*  --fix",

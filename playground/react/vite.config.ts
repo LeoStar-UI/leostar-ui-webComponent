@@ -32,10 +32,5 @@ export default defineConfig({
       ],
       dts: true,
     }),
-  ],
-
-  // https://github.com/vitest-dev/vitest
-  test: {
-    environment: 'jsdom',
-  },
+  ]
 })

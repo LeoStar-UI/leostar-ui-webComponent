@@ -6,7 +6,9 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx", "src/**/*.vue"],
+      "outputs": ["coverage/**"],
+      "inputs": ["packages/**/*.tsx", "packages/**/*.ts", "test/**/*.ts"],
+      "outputMode": "full",
       "cache": true
     },
     "lint": {
