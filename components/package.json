@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "leostar-ui",
   "version": "0.0.1",
   "description": "基于unocss的组件库",
   "author": "LeoStar-UI",
@@ -35,11 +35,11 @@
     "@stencil/core": "^4.7.0"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.6",
+    "@stencil/less": "^1.0.0",
+    "@stencil/postcss": "^2.1.0",
     "@types/node": "^16.18.11",
-    "jest": "^29.7.0",
-    "jest-cli": "^29.7.0",
-    "puppeteer": "21.1.1"
+    "autoprefixer": "^10.4.13",
+    "classnames": "^2.2.6"
   },
   "license": "MIT"
 }
