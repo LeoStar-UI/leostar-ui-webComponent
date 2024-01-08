@@ -14,6 +14,7 @@ $ pnpm i # 安装项目的依赖
 
 开发中使用的工具的高级概述：
 
+- [@antfu/ni](https://github.com/antfu/ni) 作为包管理工具
 - [TypeScript](https://www.typescriptlang.org/) 作为开发语言
 - [Vite](https://vitejs.dev/) 和 [ESBuild](https://esbuild.github.io/) 用于开发打包
 - [Vitest](https://vitest.dev/) 用于单元测试

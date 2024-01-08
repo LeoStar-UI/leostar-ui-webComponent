@@ -14,6 +14,7 @@ $ pnpm i # install the dependencies of the project
 
 A high level overview of tools used:
 
+- [@antfu/ni](https://github.com/antfu/ni) as pagkage manager
 - [TypeScript](https://www.typescriptlang.org/) as the development language
 - [Vite](https://vitejs.dev/) and [ESBuild](https://esbuild.github.io/) for development bundling
 - [Vitest](https://vitest.dev/) for unit testing
@@ -44,11 +45,16 @@ The project uses [husky](https://typicode.github.io/husky/) to enforce the follo
 ## Scripts
 
 - [`pnpm build`](#pnpm-build)
-- [`pnpm cz`](#pnpm-cz)
+- [`pnpm commit`](#pnpm-commit)
 - [`pnpm preview`](#pnpm-preview)
 - [`pnpm lint`](#pnpm-lint)
 - [`pnpm test`](#pnpm-test)
+- [`pnpm play`](#pnpm-play)
 
 ### pnpm build
 
 The `build` script builds all packages in the repository. It is equivalent to running `pnpm build` in each package directory.
+
+### pnpm commit
+
+We use [commitlint] (https://commitlint.js.org/) to check the submitted information. It will check that the submitted message conforms to the format we have defined. If the submission message does not conform to the format, it will return an error that is used, usage nr commit=git add . && cz-git。
