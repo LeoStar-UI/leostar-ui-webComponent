@@ -1,0 +1,3 @@
+{
+  "extends": ["@leostar-ui/eslint-config/library"]
+}
