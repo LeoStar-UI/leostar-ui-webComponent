@@ -1,6 +1,3 @@
 {
-  "extends": "@leostar-ui/typescript-config/playground.json",
-  "references": [
-    "@leostar-ui/typescript-config/node.json"
-  ]
+  "extends": "@leostar-ui/typescript-config/playground.json"
 }

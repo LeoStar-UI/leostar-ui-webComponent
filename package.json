@@ -12,6 +12,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --no-cache --continue",
+    "docs:dev": "dumi dev",
+    "docs:build": "rimraf docs/dist && dumi build",
+    "play": "pnpm -C playground dev",
     "prepare": "husky install",
     "lint": "turbo lint --no-daemon",
     "test": "turbo test --no-daemon",
@@ -21,9 +24,7 @@
     "commit": "git add . && git-cz",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish",
-    "docs:dev": "dumi dev",
-    "docs:build": "rimraf docs/dist && dumi build"
+    "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "packageManager": "pnpm@8.14.0",
   "config": {

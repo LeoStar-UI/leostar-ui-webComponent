@@ -1,9 +1,9 @@
 {
-  "name": "vue3-vite-alova-ts-vitest",
+  "name": "playground",
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@8.10.0",
+  "packageManager": "pnpm@8.14.0",
   "scripts": {
     "dev": "vite --mode dev",
     "pro": "vite --mode pro",

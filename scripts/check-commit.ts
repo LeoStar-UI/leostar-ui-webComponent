@@ -17,7 +17,7 @@ function exitProcess(code = 1) {
 
 async function checkVersion() {
   try {
-    const { versions } = await fetch('http://registry.npmjs.org/antd').then((res: Response) =>
+    const { versions } = await fetch('http://registry.npmjs.org/leostar-ui').then((res: Response) =>
       res.json(),
     );
     if (version in versions) {
@@ -38,8 +38,8 @@ async function checkBranch({ current }: StatusResult) {
     version.includes('-experimental.')
   ) {
     console.log(chalk.cyan('😃 Alpha version. Skip branch check.'));
-  } else if (current !== 'master' && current !== '4.0-prepare') {
-    console.log(chalk.yellow('🤔 You are not in the master branch!'));
+  } else if (current !== 'main' && current !== '4.0-prepare') {
+    console.log(chalk.yellow('🤔 You are not in the main branch!'));
     exitProcess();
   }
 }
@@ -56,8 +56,8 @@ async function checkCommit({ files }: StatusResult) {
 
 async function checkRemote() {
   try {
-    const { remote } = await git.fetch('origin', 'master');
-    console.log(chalk.blue('⛳ Checking origin master with `git fetch origin master`'));
+    const { remote } = await git.fetch('origin', 'main');
+    console.log(chalk.blue('⛳ Checking origin main with `git fetch origin main`'));
     if (!remote?.includes('ant-design/ant-design')) {
       console.log(chalk.blue('⛳ Checking locally with `git config --get remote.origin.url`'));
       const { value } = await git.getConfig('remote.origin.url');
