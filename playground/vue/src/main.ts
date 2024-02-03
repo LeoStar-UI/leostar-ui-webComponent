@@ -8,7 +8,12 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'onu-ui/dist/style.css'
 import 'uno.css'
+import { applyPolyfills, defineCustomElements } from 'leostar-ui/loader';
 
+// Bind the custom elements to the window object
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
 const app = createApp(App)
 const pinia = createPinia()
 const router = createRouter({

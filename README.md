@@ -12,7 +12,7 @@
   </a>
 </p>
 
-React component library based on UnoCSS
+A web component library
 
 ## Reference
 

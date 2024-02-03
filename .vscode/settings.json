@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": true,
@@ -13,12 +13,7 @@
   "i18n-ally.sourceLanguage": "zh-CN",
   "i18n-ally.displayLanguage": "zh-CN",
   "i18n-ally.enabledFrameworks": ["react"],
-  "i18n-ally.localesPaths": [
-    "packages/locale",
-  ],
-
-  // Visuals
-  "workbench.activityBar.visible": true,
+  "i18n-ally.localesPaths": ["packages/locale"],
   "workbench.colorTheme": "Dracula",
   "workbench.editor.tabCloseButton": "left",
   "workbench.iconTheme": "vscode-great-icons",
@@ -113,5 +108,9 @@
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, i18n.config.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, panda.config.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, vuetify.config.*, webpack.config.*, windi.config.*"
   },
-  "nuxt.isNuxtApp": false
+  "nuxt.isNuxtApp": false,
+  "workbench.editor.tabActionLocation": "left",
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

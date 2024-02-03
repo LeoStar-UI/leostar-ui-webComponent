@@ -25,6 +25,6 @@
     "skipLibCheck": true,
     "composite": true
   },
-  "exclude": ["dist", "node_modules"],
+  "exclude": ["./dist", "./node_modules"],
   "composite": true
 }

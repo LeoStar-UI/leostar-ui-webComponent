@@ -1,4 +1,4 @@
 {
   "extends": "@leostar-ui/typescript-config/base.json",
-  "include": [".dumirc.ts", "**/*"]
+  "include": [".dumirc.ts"]
 }

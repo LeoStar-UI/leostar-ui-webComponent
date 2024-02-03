@@ -1,4 +1,4 @@
-# my-component
+# leo-button
 
 
 
@@ -12,6 +12,8 @@
 | `first`  | `first`   | The first name  | `string` | `undefined` |
 | `last`   | `last`    | The last name   | `string` | `undefined` |
 | `middle` | `middle`  | The middle name | `string` | `undefined` |
+| `size`   | `size`    |                 | `string` | `'normal'`  |
+| `type`   | `type`    |                 | `string` | `'default'` |
 
 
 ----------------------------------------------
