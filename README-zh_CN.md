@@ -13,12 +13,11 @@
   </a>
 </p>
 
-一个 web component 组件库
+基于 [stencil](https://stenciljs.com/) 的 web component 组件库
 
 ## 📚参考
 
-- [UmiJS官网](https://umijs.org/docs/introduce/introduce)
-- [Vitest官网](https://cn.vitest.dev/)
+- [stencil](https://stenciljs.com/)
 - [Turborepo官方文档](https://turbo.build/repo/docs)
 - [changesets](https://github.com/changesets/changesets)
 - [TypeScript](https://www.typescriptlang.org/)

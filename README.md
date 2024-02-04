@@ -12,12 +12,11 @@
   </a>
 </p>
 
-A web component library
+The web component library based on [stencil](https://stenciljs.com/)
 
 ## Reference
 
-- [UmiJS官网](https://umijs.org/docs/introduce/introduce)
-- [Vitest官网](https://cn.vitest.dev/)
+- [stencil](https://stenciljs.com/)
 - [Turborepo官方文档](https://turbo.build/repo/docs)
 - [changesets](https://github.com/changesets/changesets)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -26,6 +25,7 @@ A web component library
 - [Unocss](https://unocss.dev/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
+
 
 ## Contribute
 
