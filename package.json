@@ -20,7 +20,6 @@
     "prepare": "husky install",
     "lint": "turbo lint --no-daemon",
     "test": "turbo test --no-daemon",
-    "test:coverage": "jest --coverage",
     "clean": "turbo run clean && rm -rf node_modules",
     "typecheck": "tsc --noEmit",
     "commit": "git add . && git-cz",
