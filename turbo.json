@@ -7,9 +7,9 @@
     },
     "test": {
       "outputs": ["coverage/**"],
-      "inputs": ["packages/**/*.tsx", "packages/**/*.ts", "test/**/*.ts"],
+      "inputs": ["component/src/components/**/**/*.tsx", "component/src/components/**/**/*.ts"],
       "outputMode": "full",
-      "cache": true
+      "cache": false
     },
     "lint": {
       "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx", "src/**/*.vue"],
