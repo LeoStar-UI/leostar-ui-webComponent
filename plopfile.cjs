@@ -18,13 +18,25 @@ module.exports = plop => {
         type: "add", // 代表添加文件
         path:
           "component/src/components/{{ name }}/{{ name }}.tsx", // 要生成的文件路径
-        templateFile: "internal/plop-templates/stencil/component.hbs" // 文件模板
+        templateFile: "internal/plop-templates/component.hbs" // 文件模板
       },
       {
         type: "add", // 代表添加文件
         path:
           "component/src/components/{{ name }}/{{ name }}.scss", // 要生成的文件路径
-        templateFile: "internal/plop-templates/stencil/style.hbs"
+        templateFile: "internal/plop-templates/style.hbs"
+      },
+      {
+        type: "add", // 代表添加文件
+        path:
+          "component/src/components/{{ name }}/test/{{ name }}.e2e.ts", // 要生成的文件路径
+        templateFile: "internal/plop-templates/test.e2e.hbs"
+      },
+      {
+        type: "add", // 代表添加文件
+        path:
+          "component/src/components/{{ name }}/test/{{ name }}.spec.tsx", // 要生成的文件路径
+        templateFile: "internal/plop-templates/test.spec.hbs"
       }
     ]
   });

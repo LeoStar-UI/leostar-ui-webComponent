@@ -19,19 +19,20 @@ export namespace Components {
           * The middle name
          */
         "middle": string;
-        "size": string;
-        "type": string;
-    }
-    interface LeoCard {
-        "first": string;
-    }
-    interface LeoDemo {
-    }
-    interface LeoForm {
-        "first": string;
     }
     interface LeoSearch {
+        /**
+          * The first name
+         */
         "first": string;
+        /**
+          * The last name
+         */
+        "last": string;
+        /**
+          * The middle name
+         */
+        "middle": string;
     }
 }
 declare global {
@@ -41,24 +42,6 @@ declare global {
         prototype: HTMLLeoButtonElement;
         new (): HTMLLeoButtonElement;
     };
-    interface HTMLLeoCardElement extends Components.LeoCard, HTMLStencilElement {
-    }
-    var HTMLLeoCardElement: {
-        prototype: HTMLLeoCardElement;
-        new (): HTMLLeoCardElement;
-    };
-    interface HTMLLeoDemoElement extends Components.LeoDemo, HTMLStencilElement {
-    }
-    var HTMLLeoDemoElement: {
-        prototype: HTMLLeoDemoElement;
-        new (): HTMLLeoDemoElement;
-    };
-    interface HTMLLeoFormElement extends Components.LeoForm, HTMLStencilElement {
-    }
-    var HTMLLeoFormElement: {
-        prototype: HTMLLeoFormElement;
-        new (): HTMLLeoFormElement;
-    };
     interface HTMLLeoSearchElement extends Components.LeoSearch, HTMLStencilElement {
     }
     var HTMLLeoSearchElement: {
@@ -67,9 +50,6 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "leo-button": HTMLLeoButtonElement;
-        "leo-card": HTMLLeoCardElement;
-        "leo-demo": HTMLLeoDemoElement;
-        "leo-form": HTMLLeoFormElement;
         "leo-search": HTMLLeoSearchElement;
     }
 }
@@ -87,25 +67,23 @@ declare namespace LocalJSX {
           * The middle name
          */
         "middle"?: string;
-        "size"?: string;
-        "type"?: string;
-    }
-    interface LeoCard {
-        "first"?: string;
-    }
-    interface LeoDemo {
-    }
-    interface LeoForm {
-        "first"?: string;
     }
     interface LeoSearch {
+        /**
+          * The first name
+         */
         "first"?: string;
+        /**
+          * The last name
+         */
+        "last"?: string;
+        /**
+          * The middle name
+         */
+        "middle"?: string;
     }
     interface IntrinsicElements {
         "leo-button": LeoButton;
-        "leo-card": LeoCard;
-        "leo-demo": LeoDemo;
-        "leo-form": LeoForm;
         "leo-search": LeoSearch;
     }
 }
@@ -114,9 +92,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "leo-button": LocalJSX.LeoButton & JSXBase.HTMLAttributes<HTMLLeoButtonElement>;
-            "leo-card": LocalJSX.LeoCard & JSXBase.HTMLAttributes<HTMLLeoCardElement>;
-            "leo-demo": LocalJSX.LeoDemo & JSXBase.HTMLAttributes<HTMLLeoDemoElement>;
-            "leo-form": LocalJSX.LeoForm & JSXBase.HTMLAttributes<HTMLLeoFormElement>;
             "leo-search": LocalJSX.LeoSearch & JSXBase.HTMLAttributes<HTMLLeoSearchElement>;
         }
     }

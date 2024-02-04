@@ -2,11 +2,11 @@ import { Component, Prop, h } from '@stencil/core';
 import { format } from '../../utils/utils';
 
 @Component({
-  tag: 'leo-search',
-  styleUrl: 'leo-search.scss',
+  tag: '{{name}}',
+  styleUrl: '{{name}}.scss',
   shadow: true,
 })
-export class LeoSearch {
+export class {{ properCase name }} {
   /**
    * The first name
    */

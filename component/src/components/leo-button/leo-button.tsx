@@ -1,7 +1,5 @@
-import { Component, Host, Prop, h } from '@stencil/core';
-import { createNamespace } from '../../utils/create/index';
-import classNames from 'classnames';
-const [bem] = createNamespace('leo-button');
+import { Component, Prop, h } from '@stencil/core';
+import { format } from '../../utils/utils';
 
 @Component({
   tag: 'leo-button',
@@ -24,15 +22,11 @@ export class LeoButton {
    */
   @Prop() last: string;
 
-  @Prop() type = 'default';
-  @Prop() size = 'normal';
+  private getText(): string {
+    return format(this.first, this.middle, this.last);
+  }
 
   render() {
-    const {
-      type,
-      size
-    } = this;
-    const classes = [classNames(bem([type, size]))];
-    return <Host class={classNames('leo-button', classes)}><slot></slot></Host>;
+    return <div>Hello, World! I'm {this.getText()}</div>;
   }
 }

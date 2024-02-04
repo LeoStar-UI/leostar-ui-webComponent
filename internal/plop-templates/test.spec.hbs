@@ -1,0 +1,36 @@
+import { newSpecPage } from '@stencil/core/testing';
+import { {{ properCase name }} } from '../{{name}}';
+
+describe('{{name}}', () => {
+  it('renders', async () => {
+    const { root } = await newSpecPage({
+      components: [{{ properCase name }}],
+      html: '<{{name}}></{{name}}>',
+    });
+    expect(root).toEqualHtml(`
+      <{{name}}>
+        <mock:shadow-root>
+          <div>
+            Hello, World! I'm
+          </div>
+        </mock:shadow-root>
+      </{{name}}>
+    `);
+  });
+
+  it('renders with values', async () => {
+    const { root } = await newSpecPage({
+      components: [{{ properCase name }}],
+      html: `<{{name}} first="Stencil" last="'Don't call me a framework' JS"></{{name}}>`,
+    });
+    expect(root).toEqualHtml(`
+      <{{name}} first="Stencil" last="'Don't call me a framework' JS">
+        <mock:shadow-root>
+          <div>
+            Hello, World! I'm Stencil 'Don't call me a framework' JS
+          </div>
+        </mock:shadow-root>
+      </{{name}}>
+    `);
+  });
+});
