@@ -6,9 +6,7 @@
       "dependsOn": ["^build"]
     },
     "test": {
-      "outputs": ["coverage/**"],
       "inputs": ["component/src/components/**/**/*.tsx", "component/src/components/**/**/*.ts"],
-      "outputMode": "full",
       "cache": false
     },
     "lint": {
