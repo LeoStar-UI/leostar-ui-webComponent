@@ -17,13 +17,13 @@ module.exports = plop => {
       {
         type: "add", // 代表添加文件
         path:
-          "components/src/library/{{ name }}/{{ name }}.tsx", // 要生成的文件路径
+          "component/src/components/{{ name }}/{{ name }}.tsx", // 要生成的文件路径
         templateFile: "internal/plop-templates/stencil/component.hbs" // 文件模板
       },
       {
         type: "add", // 代表添加文件
         path:
-          "components/src/library/{{ name }}/{{ name }}.scss", // 要生成的文件路径
+          "component/src/components/{{ name }}/{{ name }}.scss", // 要生成的文件路径
         templateFile: "internal/plop-templates/stencil/style.hbs"
       }
     ]

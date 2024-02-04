@@ -90,7 +90,7 @@ importers:
         specifier: latest
         version: 1.10.14
 
-  components:
+  component:
     dependencies:
       '@stencil/core':
         specifier: ^4.7.0
@@ -236,7 +236,7 @@ importers:
         version: 2.16.2
       leostar-ui:
         specifier: workspace:^
-        version: link:../../components
+        version: link:../../component
       vue:
         specifier: ^3.3.7
         version: 3.3.13(typescript@5.2.2)
