@@ -50,7 +50,7 @@
     "stylelint": "^15.11.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-order": "^6.0.3",
-    "typescript": "^5.2.2",
+    "typescript": "^5.4.3",
     "unocss": "^0.57.1",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-icons": "^0.17.1",
